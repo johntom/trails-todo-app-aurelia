@@ -1,0 +1,14 @@
+<template>
+  <div>
+    <md-card md-title="Password input">
+      <div>
+        <md-input md-type="password" md-label="password text field" md-value.bind="password"></md-input><br />
+      </div>
+    </md-card>
+    <md-card md-title="Email input">
+      <div>
+        <md-input md-type="email" md-label="email text field" md-validate="true" md-validate-error="invalid email" md-value.bind="email"></md-input><br />
+      </div>
+    </md-card>
+  </div>
+</template>

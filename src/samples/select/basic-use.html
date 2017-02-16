@@ -1,0 +1,14 @@
+<template>
+  <div>
+    <select md-select value.two-way="selectedValue">
+      <option value="" disabled selected>select an item</option>
+      <option value="item1">item 1</option>
+      <option value="item2">item 2</option>
+      <option value="item3">item 3</option>
+      <option value="item4">item 4</option>
+    </select>
+
+    <a md-button="flat: true;" md-waves click.trigger="setSelectedValue()" class="accent-text">set to item 3</a>
+    You selected: ${selectedValue}
+  </div>
+</template>

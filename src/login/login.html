@@ -1,0 +1,44 @@
+<template>
+  <section class="au-animate section no-pad-bot">
+   <div class="container">   
+
+  <!--<a md-button md-tooltip="position: left; text: A am a tooltip;">on the left</a>-->
+  <!--<a md-button md-tooltip="position: top; text: A am a tooltip;">on the top</a>
+  <a md-button md-tooltip="position: bottom; text: A am a tooltip;">on the bottom</a>
+  <a md-button md-tooltip="position: right; text: A am a tooltip;">on the right</a>-->
+
+<h4>${headingLogin}</h4>
+<div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Placeholder" id="email" value.bind="email" type="text"  md-tooltip="position: left; text: Please enter name
+                            "  class="validate">
+          <label for="email">UserName</label>
+        </div>
+     
+      </div>
+   
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="password" type="password" value.bind="password"   md-tooltip="position: left; text: Please enter password"  class="validate">
+          <label for="password">Password</label>
+        </div>
+      </div>
+    
+    
+     <div class="row">
+           <div class="col s6">
+                <button type="submit" tooltipped " data-position="top " data-delay="50 " md-tooltip="position: top; text: Demo of trails backend "  click.delegate="login() " class="btn btn-lg btn-block btn-default ">Log in </button>
+         
+        </div>
+            
+          
+      </div>
+    
+    </form>
+  </div>
+
+  </div>
+ </section>
+</template>
